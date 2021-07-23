@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: #34364a;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation .icon {
+  display: none;
+}
+
+.judul {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navigation a {
+  margin-left: 40px;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f8fd;
+  border-radius: 10px;
+}
+
+#about .text {
+  flex-basis: 60%;
+  padding-left: 20px;
+}
+
+.tombol {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #335ef7;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+}
+
+.tombol:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+#about .text .link {
+  font-style: italic;
+}
+
+#about .text h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#about .image {
+  flex-basis: 40%;
+}
+
+#about .image img {
+  width: 100%;
+}
+
+#services {
+  padding-top: 30px;
+}
+
+#services h2,
+.aside-h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#services p,
+.aside-text {
+  font-weight: 200;
+  text-align: center;
+}
+
+#services .card {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 50px;
+}
+
+#services .card .card-item {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+
+#services .card .card-item h3 {
+  text-align: center;
+}
+
+#services .card .card-item p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#services .card img {
+  width: 100%;
+}
+
+aside {
+  margin-top: 40px;
+}
+
+aside .aside-text {
+  margin-bottom: 30px;
+}
+
+.biodata-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.biodata-form .biodata {
+  flex-basis: 40%;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+.biodata-form .biodata img {
+  width: 100%;
+}
+
+.biodata-form .contact {
+  flex-basis: 50%;
+}
+
+.biodata h3 {
+  text-align: center;
+}
+
+.contact,
+.biodata {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.form-group input,
+textarea {
+  padding: 5px;
+}
+
+aside h3 {
+  font-size: 25px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #e5e9f2;
+}
+
+/* Media Query */
+@media screen and (max-width: 513px) {
+  .container {
+    width: 95%;
+  }
+
+  .navigation a:not(:last-child) {
+    display: none;
+  }
+
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navigation.responsive {
+    position: relative;
+  }
+  .navigation.responsive.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+  }
+
+  #services .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #services .card .card-item img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .biodata-form {
+    flex-direction: column;
+  }
+}
