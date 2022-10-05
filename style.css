@@ -120,6 +120,7 @@ nav {
 #services .card .card-item p {
   font-size: 14px;
   font-weight: 300;
+  padding: 10px;
 }
 
 #services .card img {
